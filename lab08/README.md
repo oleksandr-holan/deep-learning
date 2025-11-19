@@ -73,3 +73,9 @@ epochs 15
 validation_steps 25
 
 ![alt text](Untitled-5.png)
+
+| Model | Best Validation Accuracy | Stability | Signs of Overfitting? | General Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **VGG16** | ~89% (with Dropout 0.2) | Fairly stable | Mild overfitting after 20 epochs. | A simple, strong baseline. |
+| **ResNet50** | *[Fill this in]* | *[e.g., Very Stable / Unstable]* | *[Yes/No/Slightly]* | *[e.g., Converged faster than VGG16]* |
+| **InceptionV3** | *[Fill this in]* | *[e.g., Very Stable]* | *[Yes/No/Slightly]* | *[e.g., Highest accuracy, but sensitive to input size]* |
