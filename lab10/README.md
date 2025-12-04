@@ -46,3 +46,9 @@ Epoch 10/10
 Total images processed: 1000
 Real Model Accuracy: 91.00%
 ```
+
+## Task 4
+
+![alt text](image.png)
+
+![alt text](image-1.png)
