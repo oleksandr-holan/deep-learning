@@ -172,3 +172,9 @@ Epoch 6/15
 --- Evaluating (Exp 1: VGG16 Shallow FT) ---
 32/32 ━━━━━━━━━━━━━━━━━━━━ 3s 102ms/step - accuracy: 0.9775 - loss: 0.1157
 Test Accuracy: 98.10%
+
+## Task 4
+
+![alt text](image.png)
+
+![alt text](image-1.png)
