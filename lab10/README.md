@@ -2,6 +2,48 @@
 
 ## Task 1-2
 
+### No Augmentation, No Finetuning, image size 150
+
+![alt text](image-8.png)
+
+```sh
+Found test_images directory at ./uploaded_files
+
+--- Testing images in horse ---
+1/1 ━━━━━━━━━━━━━━━━━━━━ 5s 5s/step
+horse.4.png: Predicted HORSE (0.1600)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 35ms/step
+horse.2.png: Predicted HORSE (0.0002)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 36ms/step
+horse.3.png: Predicted HORSE (0.0000)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 35ms/step
+horse.5.png: Predicted HORSE (0.0000)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 33ms/step
+horse.1.png: Predicted HORSE (0.0000)
+
+--- Testing images in person ---
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 34ms/step
+person.5.png: Predicted HUMAN (0.9906)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 46ms/step
+person.3.png: Predicted HUMAN (0.8281)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 38ms/step
+person.4.png: Predicted HUMAN (0.8946)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 38ms/step
+person.1.png: Predicted HUMAN (0.9916)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 38ms/step
+person.2.png: Predicted HUMAN (0.9955)
+```
+
+### Augmentation, No Finetuning, image size 300
+
+### Augmentation, No Finetuning, image size 150
+
+### Augmentation, Finetuning, image size 150
+
+
+
+## Task 3
+
 steps_per_epoch=100
 epochs=10
 validation_steps=25
@@ -20,7 +62,7 @@ Real Model Accuracy: 87.10%
 ```
 
 ```sh
---- Testing images in horse ---
+--- Testing images in cat ---
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 41ms/step
 cat.3.png: Predicted CAT (0.1452)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 37ms/step
@@ -32,7 +74,7 @@ cat.4.png: Predicted CAT (0.2412)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 36ms/step
 cat.2.png: Predicted CAT (0.0003)
 
---- Testing images in person ---
+--- Testing images in dog ---
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 38ms/step
 dog.1.png: Predicted DOG (0.9961)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 44ms/step
@@ -55,7 +97,7 @@ Epoch 10/10
 ```
 
 ```sh
---- Testing images in horse ---
+--- Testing images in cat ---
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 43ms/step
 cat.5.png: Predicted CAT (0.2477)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 42ms/step
@@ -67,7 +109,7 @@ cat.1.png: Predicted CAT (0.0022)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 40ms/step
 cat.4.png: Predicted CAT (0.2366)
 
---- Testing images in person ---
+--- Testing images in dog ---
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 46ms/step
 dog.3.png: Predicted DOG (0.7902)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 42ms/step
@@ -95,7 +137,7 @@ Epoch 10/10
 ```
 
 ```sh
---- Testing images in horse ---
+--- Testing images in cat ---
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 37ms/step
 cat.3.png: Predicted DOG (0.6175)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 36ms/step
@@ -107,7 +149,7 @@ cat.4.png: Predicted CAT (0.4340)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 38ms/step
 cat.2.png: Predicted CAT (0.0022)
 
---- Testing images in person ---
+--- Testing images in dog ---
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 39ms/step
 dog.1.png: Predicted DOG (0.9972)
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 39ms/step
@@ -126,8 +168,6 @@ Real Model Accuracy: 83.60%
 ```
 
 ![alt text](image-2.png)
-
-## Task 3
 
 ### Експеримент 1: VGG16 (Shallow Fine-Tuning)
 
