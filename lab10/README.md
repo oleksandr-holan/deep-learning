@@ -1,11 +1,13 @@
 # Report
 
+## Task 1-2
+
 steps_per_epoch=100
 epochs=10
 validation_steps=25
 batch_size=20
 
-## No Augmentation, No Finetuning
+### No Augmentation, No Finetuning
 
 ```sh
 Epoch 10/10
@@ -45,7 +47,7 @@ dog.3.png: Predicted DOG (0.8985)
 
 ![alt text](image.png)
 
-## Augmentation, No Finetuning
+### Augmentation, No Finetuning
 
 ```sh
 Epoch 10/10
@@ -85,7 +87,7 @@ Real Model Accuracy: 87.30%
 
 ![alt text](image-1.png)
 
-## Augmentation, Finetuning
+### Augmentation, Finetuning
 
 ```sh
 Epoch 10/10
@@ -125,7 +127,9 @@ Real Model Accuracy: 83.60%
 
 ![alt text](image-2.png)
 
-## Експеримент 1: VGG16 (Shallow Fine-Tuning)
+## Task 3
+
+### Експеримент 1: VGG16 (Shallow Fine-Tuning)
 
 * **Параметри:** Dropout 0.5 (з Lab 08), RMSprop.
 
